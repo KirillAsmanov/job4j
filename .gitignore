@@ -72,3 +72,6 @@ jrebel.lic
 build
 .gradle
 *.pid
+/lib/hamcrest-all-1.3.jar
+/out/production/job4j/META-INF/job4j.kotlin_module
+/lib/junit-4.13.jar
