@@ -1,6 +1,17 @@
 package ru.job4j.Calculator;
 
+/**
+ * Класс для вычисления арифметических операций, решение задачи "3. Арифметические операции. [#185]"
+ * @author Kirill Asmanov
+ * @since 27.02.2020
+ * @version 1.0.0;
+ */
+
 public class Calculator {
+    /**
+     * Метод main, производит вычисления и выводит результаты арифметических операций в консоль
+     * @param args - args
+     */
     public static void main(String[] args) {
         int one = 1;
         int two = 2;
