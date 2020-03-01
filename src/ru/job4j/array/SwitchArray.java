@@ -20,6 +20,21 @@ public class SwitchArray {
         return array;
     }
 
+    /**
+     * Меняет местами значения с заданными индексами
+     * @param array - исходный массив
+     * @param source - индекс элемента, на который мы меняем
+     * @param dest - индекс элемента, который будет меняться
+     * @return - массив, в котором два заданных элемента были заменены между собой
+     */
+    public static int[] swap(int[] array, int source, int dest) {
+        int temp = array[source];
+        array[source] = array[dest];
+        array[dest] = temp;
+        return array;
+    }
+
+
     public static void main(String[] args) {
         int[] nums = new int[] {1, 2, 3, 4, 5, 6};
         int[] rsl = swapBorder(nums);
