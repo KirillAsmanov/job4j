@@ -24,4 +24,30 @@ public class FindLoop {
         }
         return rsl;
     }
+
+    /**
+     * Метод, осуществляющий поиск перебором в массиве в заданном диапазоне элементов и выводящий индекс найденного элемента
+     * @param data - массив чисел
+     * @param el - искомый элемент
+     * @param start - индекс первого элемента в диапазоне поиска
+     * @param finish - индекс последнего элемента в диапазоне поиска
+     * @return - индекс найденного в диапазоне элемента
+     */
+    public static int indexOf(int[] data, int el, int start, int finish) {
+        int rsl = -1;
+
+        if (start>finish) {
+            int temp = start;
+            start = finish;
+            finish = temp;
+        }
+
+        for (int index = start; index <= finish; index++){
+            if (data[index]==el){
+                rsl = index;
+                break;
+            }
+        }
+        return rsl;
+    }
 }
