@@ -49,17 +49,6 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3AndStartHigherThenFinish() {
-        int[] input = new int[] {5, 2, 10, 2, 4};
-        int value = 2;
-        int start = 4;
-        int finish = 2;
-        int result = FindLoop.indexOf(input, value, start, finish);
-        int expect = 3;
-        assertThat(result, is(expect));
-    }
-
-    @Test
     public void whenHasNotElement() {
         int[] input = new int[] {5, 2, 10, 2, 4};
         int value = 6;
