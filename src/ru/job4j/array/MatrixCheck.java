@@ -52,4 +52,21 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    /**
+     * Метод проверяет, находится ли на поле выигрышная комбинация
+     * @param board - входит игровое поле
+     * @return - true/false в зависимости от наличия выигрышной ситуации
+     */
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int i = 0; i<board.length; i++) {
+            if (board[i][i]=='X') {
+                result = (monoHorizontal(board, i) || monoVertical(board, i));
+                break;
+            }
+        }
+        return result;
+    }
+
 }
