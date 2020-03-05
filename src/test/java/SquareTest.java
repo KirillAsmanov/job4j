@@ -1,11 +1,8 @@
-package ru.job4j.Test;
-
 import org.junit.Test;
 import ru.job4j.array.Square;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertThrows;
 
 public class SquareTest {
     @Test

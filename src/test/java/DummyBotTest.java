@@ -1,6 +1,6 @@
-package ru.job4j.condition.bot;
-
 import org.junit.Test;
+import ru.job4j.condition.bot.DummyBot;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
