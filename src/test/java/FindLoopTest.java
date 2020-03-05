@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 
 public class FindLoopTest {
     @Test
-    public void whenFind6in1268 () {
+    public void whenFind6in1268() {
         FindLoop test = new FindLoop();
         int[] input = new int[] {1, 2, 6, 8};
         int value = 6;

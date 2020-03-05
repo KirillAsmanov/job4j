@@ -1,6 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
-import ru.job4j.Converter.Converter;
+import ru.job4j.converter.Converter;
+
 
 public class ConverterTest {
 

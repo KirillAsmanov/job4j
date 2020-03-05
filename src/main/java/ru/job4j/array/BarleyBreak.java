@@ -15,15 +15,15 @@ public class BarleyBreak {
     public static void main(String[] args) {
         int[][] table = new int[3][3];
         int elements = 0;
-        for (int i = 0; i<3; i++) {
-            for (int j = 0; j<3; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 elements += 1;
                 table[i][j] = elements;
             }
         }
 
-        for (int i = 0; i<3; i++) {
-            for (int j = 0; j<3; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(table[i][j] + "  ");
             }
             System.out.println(" ");

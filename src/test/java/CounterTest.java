@@ -14,7 +14,7 @@ public class CounterTest {
     }
 
     @Test
-    public void whenSumEvenNumFrom10To12Is22(){
-        assertThat(Counter.sumByEven(10,12), is(22));
+    public void whenSumEvenNumFrom10To12Is22() {
+        assertThat(Counter.sumByEven(10, 12), is(22));
     }
 }

@@ -4,7 +4,7 @@ import ru.job4j.condition.SqArea;
 
 public class SqAreaTest {
     @Test
-    public void square(){
+    public void square() {
         int inP = 6;
         int inK = 2;
         double excepted = 2;
