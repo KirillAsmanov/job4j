@@ -1,4 +1,4 @@
-package ru.job4j.Converter;
+package ru.job4j.converter;
 
 public class Converter {
     public static int rubleToEuro(int value) {
@@ -21,6 +21,6 @@ public class Converter {
         boolean passedDollars = expectedDollars == outDollars;
         int euro = Converter.rubleToEuro(420);
         int dollars = Converter.rubleToDollar(420);
-        System.out.println("140 rubles are " + euro + " euro; "+ dollars + " dollars" + " Test result Euro/Dollars: " + passedEuro + " / " + passedDollars);
+        System.out.println("140 rubles are " + euro + " euro; " + dollars + " dollars" + " Test result Euro/Dollars: " + passedEuro + " / " + passedDollars);
     }
 }
