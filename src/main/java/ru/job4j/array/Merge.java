@@ -17,28 +17,19 @@ public class Merge {
      */
     public int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
-
         int leftIndex = 0;
         int rightIndex = 0;
-
         while ((leftIndex + rightIndex) < rsl.length) {
-            // Проверяем, не закончился ли левый массив.
-            // Если да, то заполняем остаток итогового массива значениями из правого
             if (leftIndex == left.length) {
                 rsl[leftIndex + rightIndex] = right[rightIndex];
                 rightIndex++;
                 continue;
             }
-
-            // Проверяем, не закончился ли правый массив.
-            // Если да, то заполняем остаток итогового массива значениями из левого
             if (rightIndex == right.length) {
                 rsl[leftIndex + rightIndex] = left[leftIndex];
                 leftIndex++;
                 continue;
             }
-
-            // Алгоритм выбора наименьшего элемента из обоих массивов и вставка его в итоговый массив
             if (left[leftIndex] <= right[rightIndex]) {
                 rsl[leftIndex + rightIndex] = left[leftIndex];
                 leftIndex++;
